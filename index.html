@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>inClassD1W1</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          color: darkblue;
+        }
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        th, td {
+          padding: 10px;
+        }
+        form {
+            display: block
+            text-emphasis: bold;
+        }
+    </style>
+</head>
+<body>
+    <table class="center">
+        <tr>
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+            <th>Sunday</th>
+        </tr>
+        <tr>
+            <td>Morning</td>
+            <td colspan="5"; rowspan="2">Class</td>
+            <td>Nothing</td>
+            <td>dog park</td>
+        </tr>
+        <tr>
+            <td>Afternoon</td>
+            <td rowspan="2">House Projects</td>
+            <td rowspan="2">Nothing</td>
+            
+        </tr>
+        <tr>
+            <td>Evening</td>
+            <td>Study/Dinner</td>
+            <td>Dinner</td>
+            <td>Study/Dinner</td>
+            <td>Study/Dinner</td>
+            <td>Out With Friends</td>
+        </tr>
+    </table>
+<form>
+    <fieldset>
+        <legend>Contact Info</legend>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="eamil@example.com" />
+        <label for="phone">Phone Number: </label>
+        <input type="tel" id="phone" name="phone" placeholder="402-XXX-XXXX" />
+        <label for="firstName">First Name: </label>
+        <input type="text" id="firstName" name="firstName" placeholder="John" />
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Doe" />
+    </fieldset>
+    <fieldset>
+        <legend>Best time to Call</legend>
+        <input type="radio" id="time1" name="time" value="Morning" checked="checked">
+        <label for="time1">Morning</label>
+
+        <input type="radio" id="time2" name="time" value="Afternoon">
+        <label for="time2">Afternoon</label>
+
+        <input type="radio" id="time3" name="time" value="Evening">
+        <label for="time3">Evening</label>
+        <br>
+        <label for="day">Best days to contact you</label>
+            <select id="day" name="day">
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thurday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+    </fieldset>
+    <fieldset>
+        <legend>Best Contact Method:</legend>
+        <input type="checkbox" id="contact1"
+               name="contact" value="Phone" checked="checked">
+        <label for="contact1">Phone</label>
+
+        <input type="checkbox" id="contact2"
+               name="contact" value="E-mail">
+        <label for="contact2">E-mail</label> 
+    </fieldset>
+    <button>Submit</button>
+</form>
+</body>
+</html>
